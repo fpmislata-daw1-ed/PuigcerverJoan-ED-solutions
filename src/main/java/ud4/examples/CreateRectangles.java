@@ -14,5 +14,10 @@ public class CreateRectangles {
         System.out.printf("Està el punt (5, 5) dins de R2? %s\n",
                 r2.contains(5,5) ? "Sí" : "No"
         );
+
+        System.out.printf("R1 esta en (%d, %d)\n", r1.getX(), r1.getY());
+        r1.setX(2);
+        System.out.printf("R1 esta en (%d, %d)\n", r1.getX(), r1.getY());
+
     }
 }

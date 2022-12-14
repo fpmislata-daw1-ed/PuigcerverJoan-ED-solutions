@@ -1,4 +1,4 @@
-package ud4.practice.models;
+package ud4.practices.models;
 
 public class Artista {
     private final String nom;

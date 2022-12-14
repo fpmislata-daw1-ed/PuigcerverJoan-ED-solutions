@@ -1,4 +1,4 @@
-package ud4.practice.models;
+package ud4.practices.models;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;

@@ -1,8 +1,8 @@
-package ud4.practice.ui;
+package ud4.practices.ui;
 
-import ud4.practice.data.BaseDeDades;
-import ud4.practice.models.Artista;
-import ud4.practice.models.Grup;
+import ud4.practices.data.BaseDeDades;
+import ud4.practices.models.Artista;
+import ud4.practices.models.Grup;
 
 import java.util.List;
 import java.util.Scanner;

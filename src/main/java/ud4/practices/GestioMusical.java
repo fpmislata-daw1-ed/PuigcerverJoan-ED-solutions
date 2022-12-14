@@ -1,7 +1,7 @@
-package ud4.practice;
+package ud4.practices;
 
-import ud4.practice.data.BaseDeDades;
-import ud4.practice.ui.MainMenu;
+import ud4.practices.data.BaseDeDades;
+import ud4.practices.ui.MainMenu;
 
 import java.util.Scanner;
 

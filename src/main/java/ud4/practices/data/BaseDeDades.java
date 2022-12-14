@@ -1,7 +1,7 @@
-package ud4.practice.data;
+package ud4.practices.data;
 
-import ud4.practice.models.Artista;
-import ud4.practice.models.Grup;
+import ud4.practices.models.Artista;
+import ud4.practices.models.Grup;
 
 import java.util.ArrayList;
 import java.util.List;

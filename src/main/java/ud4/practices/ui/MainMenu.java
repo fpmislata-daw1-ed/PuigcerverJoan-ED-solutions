@@ -16,6 +16,18 @@ public class MainMenu {
         this.dades = dades;
     }
 
+    public int nextIntMaxim(int maxim){
+        int eleccioUsuari;
+        do {
+            System.out.print("Introdueix la teua elecció: ");
+            eleccioUsuari = scanner.nextInt();
+            scanner.nextLine();
+            if(!(eleccioUsuari >= 0 && eleccioUsuari <= maxim))
+                System.out.println("L'elecció triada no està en les opcions disponibles.");
+        } while (!(eleccioUsuari >= 0 && eleccioUsuari <= maxim));
+        return eleccioUsuari;
+    }
+
     public void printMenu(){
         System.out.println("1. Afegir artista.");
         System.out.println("2. Afegir grup musical.");
@@ -29,13 +41,7 @@ public class MainMenu {
         int eleccioUsuari;
         do {
             printMenu();
-            do {
-                System.out.print("Introdueix la teua elecció: ");
-                eleccioUsuari = scanner.nextInt();
-                scanner.nextLine();
-                if(!(eleccioUsuari >= 0 && eleccioUsuari <= 5))
-                    System.out.println("L'elecció triada no està en les opcions disponibles.");
-            } while (!(eleccioUsuari >= 0 && eleccioUsuari <= 5));
+            eleccioUsuari = nextIntMaxim(5);
 
             System.out.println();
             switch (eleccioUsuari) {
@@ -82,14 +88,7 @@ public class MainMenu {
         }
         System.out.println("0. Cancelar.");
 
-        int eleccioUsuari;
-        do {
-            System.out.print("Introdueix la teua elecció: ");
-            eleccioUsuari = scanner.nextInt();
-            scanner.nextLine();
-            if(!(eleccioUsuari >= 0 && eleccioUsuari <= artistes.size()))
-                System.out.println("L'elecció triada no està en les opcions disponibles.");
-        } while (!(eleccioUsuari >= 0 && eleccioUsuari <= artistes.size()));
+        int eleccioUsuari = nextIntMaxim(artistes.size());
 
         if (eleccioUsuari == 0)
             return null;
@@ -104,14 +103,7 @@ public class MainMenu {
         }
         System.out.println("0. Cancelar.");
 
-        int eleccioUsuari;
-        do {
-            System.out.print("Introdueix la teua elecció: ");
-            eleccioUsuari = scanner.nextInt();
-            scanner.nextLine();
-            if(!(eleccioUsuari >= 0 && eleccioUsuari <= grups.size()))
-                System.out.println("L'elecció triada no està en les opcions disponibles.");
-        } while (!(eleccioUsuari >= 0 && eleccioUsuari <= grups.size()));
+        int eleccioUsuari = nextIntMaxim(grups.size());
 
         if (eleccioUsuari == 0)
             return null;

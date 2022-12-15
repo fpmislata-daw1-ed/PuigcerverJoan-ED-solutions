@@ -21,6 +21,9 @@ import java.util.Scanner;
  * per desenvolupar una aplicació real.
  *
  * TODO: Cal documentar les classes dels paquets models i ui
+ *
+ * @author Joan Puigcerver
+ * @version 1.1 2022-12-14
  */
 public class GestioMusical {
     public static void main(String[] args) {

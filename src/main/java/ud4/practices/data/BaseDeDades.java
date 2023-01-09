@@ -12,6 +12,9 @@ import java.util.List;
  * <p>
  * Aquesta classe no segueix cap tipus de patró de disseny ni
  * és un bon exemple de com funciona una aplicació real.
+ *
+ * @author Joan Puigcerver
+ * @version 1.1 2022-12-14
  */
 public class BaseDeDades {
     /**

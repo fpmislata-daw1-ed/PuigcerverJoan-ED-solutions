@@ -18,13 +18,17 @@ public class MainMenu {
 
     public int nextIntMaxim(int maxim){
         int eleccioUsuari;
-        do {
+        System.out.print("Introdueix la teua elecció: ");
+        eleccioUsuari = scanner.nextInt();
+        scanner.nextLine();
+
+        while (!(eleccioUsuari >= 0 && eleccioUsuari <= maxim)) {
+            System.out.println("L'elecció triada no està en les opcions disponibles.");
             System.out.print("Introdueix la teua elecció: ");
             eleccioUsuari = scanner.nextInt();
             scanner.nextLine();
-            if(!(eleccioUsuari >= 0 && eleccioUsuari <= maxim))
-                System.out.println("L'elecció triada no està en les opcions disponibles.");
-        } while (!(eleccioUsuari >= 0 && eleccioUsuari <= maxim));
+        }
+
         return eleccioUsuari;
     }
 

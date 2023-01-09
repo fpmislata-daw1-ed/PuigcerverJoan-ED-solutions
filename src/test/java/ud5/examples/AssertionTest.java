@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class AssertionsTest {
+public class AssertionTest {
 
     @Test
     @DisplayName("assertEquals")
@@ -23,8 +23,8 @@ public class AssertionsTest {
     @DisplayName("assertTrue & assertFalse")
     void assertMultipleTrueFalse(){
         assertAll(
-                () -> assertTrue(-10 < 0),
-                () -> assertFalse(-10 > 0)
+            () -> assertTrue(-10 < 0),
+            () -> assertFalse(-10 > 0)
         );
     }
 
@@ -34,8 +34,8 @@ public class AssertionsTest {
         String a = null;
         String b = "Joan";
         assertAll(
-                () -> assertNull(a),
-                () -> assertNotNull(b)
+            () -> assertNull(a),
+            () -> assertNotNull(b)
         );
     }
 
@@ -46,8 +46,8 @@ public class AssertionsTest {
         String a = new String("Joan");
         String b = new String("Joan");
         assertAll(
-                () -> assertSame(a, a),
-                () -> assertNotSame(a, b)
+            () -> assertSame(a, a),
+            () -> assertNotSame(a, b)
         );
     }
 
